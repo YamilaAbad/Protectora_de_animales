@@ -1,0 +1,124 @@
+:root{
+    --header: 4.375rem;
+    /*----------- Colores -------------------*/
+    --color_fondo: #fbfbfe;
+    --color_nav: #161a2e;
+    --color_principal: #ff7559;
+    --color_fuente_oscuro: #0e0e0e;
+    --color_fuente_claro: #ffffff;
+
+    --color_boton_enviar: #24c115;
+    --color_boton_inactivo: #6d6a7c;
+    --color_boton_aceptar: #166fe5;
+
+    /*----------- Margenes -------------------*/
+    --marg-8: 0.5rem;
+    --marg-16: 1rem;
+    --marg-24: 1.5rem;
+    --marg-32: 2rem;
+    --marg-48: 3rem;
+    --marg-64: 4rem;
+    --marg-72: 4.5rem;
+}
+ /*----------- Estilo general -------------------*/
+ *{
+    padding:0; 
+    margin:0;
+    box-sizing: border-box;
+ }
+ body{
+    background: var(--color_fondo);
+ }
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100vw;
+    column-gap: var(--marg-32);
+    overflow: hidden;
+    align-items: center;
+    border: 1px solid blue;
+}
+.content{
+    grid-column-end: span 4;
+}
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 100;
+    background: var(--color_nav);
+    grid-column: 1/4;
+    transition: .4s;
+    height: var(--header);
+    border: 1px solid blue;
+}
+main{
+    margin-top: var(--header); 
+    border: 1px solid blue;
+}
+.section{
+    margin: var(--marg-32);
+    overflow: hidden;
+    height: calc(100% - var(--header));
+    border: 1px solid blue;
+}
+
+
+
+
+
+
+
+
+/*------------ MEDIA QUERIES Medium devise and Large devise------------*/
+@media (min-width: 599px) and (max-width: 1023px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section {
+        margin: var(--marg-48);
+    }
+
+    .grid__container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        width: 100%;
+        column-gap: var(--marg-32);
+    }
+
+    .content {
+        grid-column-end: span 6;
+    }
+
+    .header {
+        grid-column: 1/6;
+    }
+}
+
+/*------------ MEDIA QUERIES:Extra large devise ------------*/
+@media screen and (min-width: 1024px) {
+    .section {
+        flex-direction: column;
+        margin: 0 var(--marg-64);
+    }
+
+    .grid__container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        width: 100%;
+        column-gap: var(--marg-64);
+    }
+
+    .content {
+        grid-column-end: span 12;
+    }
+
+    .header {
+        grid-column: 1/12;
+    }
+}
+    
