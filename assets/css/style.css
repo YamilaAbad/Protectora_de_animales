@@ -21,6 +21,14 @@
     --marg-48: 3rem;
     --marg-64: 4rem;
     --marg-72: 4.5rem;
+
+    /*--------- Fuentes size ----------------*/
+    --font-size-18: 18px;
+    --font-size-24: 24px;
+    --font-size-48: 48px;
+
+    /*-------- Overlay img -----------*/
+    --overlay: rgba(0,0,0,0.6);
 }
  /*----------- Estilo general -------------------*/
  *{
@@ -39,7 +47,7 @@
     column-gap: var(--marg-32);
     overflow: hidden;
     align-items: center;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
 }
 .content{
     grid-column-end: span 4;
@@ -52,13 +60,13 @@ a{
 }
 main{
     margin-top: var(--header); 
-    border: 1px solid blue;
+   /*  border: 1px solid blue; */
 }
 .section{
-    margin: var(--marg-32);
+    /*margin: var(--marg-32);*/
     overflow: hidden;
     height: calc(100% - var(--header));
-    border: 1px solid blue;
+    /*border: 1px solid blue;*/
 }
 /*---------------------- Header ----------------------*/
 
@@ -191,7 +199,75 @@ main{
 }
 
 
+/*------------------ IMAGEN BANNER ---------------------------------------*/
+.img_banner{
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    top: var(--marg-64);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.banner::before{
+    position: absolute;
+    content: '';
+    top: var(--marg-64);
+    height: 110px;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--overlay);
+}
+.titulo_banner{
+    font-size: var(--font-size-48);
+    text-align: center;
+    position: relative;
+    margin-top: var(--marg-16);
+    color: var(--color_fuente_claro);
+    z-index: 2;
+}
 
+/*---------------------------------- CARDS ADOPCION --------------------------*/
+.cards_adopcion{
+    overflow: hidden;
+    height: calc(100% - 110px);
+    margin-top: var(--marg-24);
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: var(--marg-72);
+}
+.card_adopcion{ 
+    margin-bottom: var(--marg-24);
+    margin-left: var(--marg-8);
+    margin-right: -24px;
+}
+.overlay{
+    position: absolute;
+    content: '';
+    background-color: var(--overlay);
+}
+.img_perro_adop, .overlay{
+    box-sizing: border-box;
+    margin: var(--marg-32);
+    width: 140px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.btn_info_perro{
+    width: 130px;
+    height: 170px;
+}
+.nombre_perro{
+    position: relative;
+    text-align: center;
+    margin-top: -80px;
+    z-index: 1;
+    color: var(--color_fuente_claro);
+    font-size: var(--font-size-24);
+}
 
 
 
