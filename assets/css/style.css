@@ -63,7 +63,7 @@ main{
    /*  border: 1px solid blue; */
 }
 .section{
-    /*margin: var(--marg-32);*/
+    margin: var(--marg-32);
     overflow: hidden;
     height: calc(100% - var(--header));
     /*border: 1px solid blue;*/
@@ -94,13 +94,14 @@ main{
 }
 .nav__content{
     justify-content: space-between;
+    height: inherit;
     align-items: center; 
     flex-direction: row;
-    margin: var(--marg-8) var(--marg-32) var(--marg-16);
-    /* border: 1px solid rgb(20, 196, 35);   */
+     margin-right:var(--marg-24);
 }
 .nav__header_icon{
     justify-content: space-between;
+    margin-left: var(--marg-24);
 }
 .nav__circle-icon{
     border-radius: 50%;
@@ -111,15 +112,14 @@ main{
     background: var(--color_principal);
 }
 .nav__title{
-   
     display: inline-block;
     width: 170px;
-    /* border: 1px solid rgb(196, 20, 137);  */
-    margin: var(--marg-8);
+    margin: 0 0 0 var(--marg-8);
+   
 }
 .name__title > h1{
      color:var(--color_fondo);
-    text-align: center;
+    text-align: left;
     font-size:0.875rem;
 }
 .img__logo{
@@ -137,6 +137,7 @@ main{
 .option_oculta_mobile{
     display: none;
 }
+/*Pestaña activa*/
 .active{
     color: var(--color_principal);
 }
@@ -157,19 +158,18 @@ main{
     }
     .container-menu{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         width:100%;
-        height: inherit;
-        justify-content: space-between;
+        justify-content: center;
+       
     }
 }
 
 .nav__list{
-    /* border: 1px solid lightseagreen; */
     flex-direction: row;
     justify-content: space-around;
     width:inherit;
-    margin: 0.5rem 2rem 1rem;
+    margin:var(--marg-8) var(--marg-32);
 }
 .nav__link{
     flex-direction: column;
@@ -200,7 +200,16 @@ main{
 .footer{
     display: none;
 }
-
+/*--------------------- HOME -----------------------------*/
+.slider{
+    position:relative;
+    width:360px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    
+}
 
 /*------------------ IMAGEN BANNER ---------------------------------------*/
 .img_banner{
