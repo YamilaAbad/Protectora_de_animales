@@ -13,6 +13,8 @@
     --color_boton_inactivo: #6d6a7c;
     --color_boton_aceptar: #166fe5;
 
+    --color_links: #0000F1;
+
     /*----------- Margenes -------------------*/
     --marg-8: 0.5rem;
     --marg-16: 1rem;
@@ -23,12 +25,15 @@
     --marg-72: 4.5rem;
 
     /*--------- Fuentes size ----------------*/
+    --font-size-12: 12px;
     --font-size-18: 18px;
     --font-size-24: 24px;
+    --font-size-32: 32px;
     --font-size-48: 48px;
 
     /*-------- Overlay img -----------*/
-    --overlay: rgba(0,0,0,0.6);
+    --overlayBanner: rgba(0,0,0,0.6);
+    --overlayCard: rgba(0,0,0,0.5);
 }
  /*----------- Estilo general -------------------*/
  *{
@@ -230,7 +235,7 @@ main{
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: var(--overlay);
+    background-color: var(--overlayBanner);
 }
 .titulo_banner{
     font-size: var(--font-size-48);
@@ -243,8 +248,6 @@ main{
 
 /*---------------------------------- CARDS ADOPCION --------------------------*/
 .cards_adopcion{
-    overflow: hidden;
-    height: calc(100% - 110px);
     margin-top: var(--marg-24);
     display: flex;
     flex-wrap: wrap;
@@ -252,13 +255,12 @@ main{
 }
 .card_adopcion{ 
     margin-bottom: var(--marg-24);
-    margin-left: var(--marg-8);
-    margin-right: -24px;
+    width: 50%;
 }
 .overlay{
     position: absolute;
     content: '';
-    background-color: var(--overlay);
+    background-color: var(--overlayCard);
 }
 .img_perro_adop, .overlay{
     box-sizing: border-box;
@@ -267,6 +269,11 @@ main{
     height: 170px;
     object-fit: cover;
     border-radius: 3px;
+    text-align: center;
+    
+}
+.img_perro_adop{
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
 }
 .btn_info_perro{
     width: 130px;
@@ -281,6 +288,165 @@ main{
     font-size: var(--font-size-24);
 }
 
+/*------------------------------------ Descripción individual del perro mobile --------------------------*/
+.cartel_perro{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--marg-32);
+    margin: var(--marg-32);
+    width: 85%;
+}
+.img_perro_descripcion{
+    width: 100%;
+    height: 230px;
+    align-items: center;
+}
+.titulo_nombre_perro{
+    margin-top: var(--marg-24);
+    text-align: center;
+    font-size: var(--font-size-32);
+    font-weight: bold;
+}
+.sub_titulo_descripcion, .pie_descripcion{
+    text-align: center;
+    font-size: var(--font-size-18);
+    margin: var(--marg-24);
+}
+.descripcion_perro{
+    text-align: center;
+    font-size: var(--font-size-18);
+}
+.pie_descripcion{
+    margin-bottom: var(--marg-72);
+}
+
+/*-----------------------------INICIO DE SESIÓN-------------------------------------------------------*/
+.fondo{
+    background-image: url(../img/fondo.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    
+   
+}
+.inputs_inicio{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:15%;
+    width: 85%;
+    margin: var(--marg-32);
+}
+.titulo_sesion{
+    text-align: center;
+    font-size: var(--font-size-32);
+    margin-bottom: var(--marg-24);
+}
+.grupo{
+    width: 80%;
+    position: relative;
+    margin: var(--marg-32);
+}
+.input_group{
+    position:relative;
+    margin-top: var(--marg-32);
+}
+
+.input_sesion{
+    position: relative;
+    display: block;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    font-family: var(--fuente-general);
+    width: 100%;
+    height: 40px;
+    padding-left:var(--marg-8) ;
+    background-color:var(--color_fondo);
+    border: 2px solid var(--color_principal);
+    
+}
+.label_sesion{
+    position: relative;
+    bottom: var(--marg-64);
+    display: flex;
+    column-gap: 5px;
+    left: -20px;
+    transition: transform .25s;
+    opacity: .25s;
+}
+.icon_sesion{
+    display: inline-flex;
+    opacity: 0;
+}
+.input_sesion:focus+.label_sesion{
+    transform: translateX(26px);
+}
+.input_sesion:focus+.label_sesion .icon_sesion{
+    opacity: 1;
+    transition-delay: .1s;
+}
+.input_sesion::placeholder{
+    transition: opacity .25s;
+}
+.input_sesion:focus::placeholder{
+    opacity: 0;
+}
+.input_checkbox{
+    margin: 3px;
+    display: flex;
+    flex-direction:row;
+}
+.check_label{
+    font-size: var(--font-size-12);
+    margin-left: 4px;
+}
+.btn_iniciarSesion, .btn_crearCuenta{
+    position: relative;
+    left: 20%;
+    margin-bottom: var(--marg-24);
+    color: var(--color_fuente_claro);
+    width: 200px;
+    height: 40px;
+    font-size: var(--font-size-18);
+    padding-top: var(--marg-8);
+    padding-bottom: var(--marg-8);
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 3px var(--color_nav);
+}
+.btn_iniciarSesion{
+    background-color: var(--color_boton_aceptar);
+}
+.btn_crearCuenta{
+    margin-top: var(--marg-24);
+    background-color: var(--color_boton_enviar);
+}
+.divisor{
+    width: 100%;
+    top: 80%;
+    height: 1px;
+    background-color: var(--color_boton_inactivo); 
+    margin-top: var(--marg-24);
+}
+.links_opciones_sesion{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--marg-64);
+    right: var(--marg-8);
+    justify-content: center;
+    align-items: center;
+}
+.recuperar_contraseña{
+    position: relative;
+    text-align: center;
+    font-size: var(--font-size-18);
+    text-decoration:underline;
+    margin-bottom: var(--marg-24);
+    color: var(--color_links);
+}
 
 
 
@@ -309,6 +475,11 @@ main{
 
     .header {
         grid-column: 1/6;
+    }
+
+    .card_adopcion{ 
+        padding: var(--marg-8);
+        
     }
 }
 

@@ -10,7 +10,7 @@
 <body>
     <div class="grid_container">
         <header class="content header">
-            <nav class="nav__content">
+            <div class="nav__content">
                 <div class="nav__header_icon">
                     <a href="home" class="nav__circle-icon">
                         <img src="./assets/img/logo_refugio.png" alt="logo" class="img__logo">
@@ -20,33 +20,28 @@
                     </div>
                 </div>
                 <div class="container-menu">
+
                     <div class="nav__menu" id="nav-menu">
                         <ul class="content nav__list">
                             <!-- Opciones del menu-->
                             <li class="nav__item">
-                                <a href="./index.html" class="nav__link active">
+                                <a href="" class="nav__link active">
                                     <iconify-icon icon="ant-design:home-filled" class="icon"></iconify-icon>
                                     <span class="nav__name">Inicio</span>
                                 </a>
                             </li>
                             <!--------------------------------------------->
-                            <li class="nav__item option_oculta_mobile">
-                                <a href="#" class="nav__link">
-                                    <span class="nav__name ">¿Quienes Somos ?</span>
-                                </a>
-                            </li>
-                            <!--------------------------------------------->
                             <li class="nav__item">
-                                <a href="adopciones.html" class="nav__link ">
+                                <a href="adopciones.html" class="nav__link">
                                     <div class="circle ">
                                         <iconify-icon icon="cil:dog" class="icon_color"></iconify-icon>
                                     </div>
-                                    <span class="nav__name ">Adoptar</span>
+                                    <span class="nav__name">Adoptar</span>
                                 </a>
                             </li>
                             <!--------------------------------------------->
                             <li class="nav__item">
-                                <a href="" class="nav__link option_oculta">
+                                <a href="" class="nav__link">
                                         <iconify-icon icon="subway:usd" class="icon"></iconify-icon>
                                     <span class="nav__name">Doná</span>
                                 </a>
@@ -60,36 +55,62 @@
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <!--------------------------------------------->
-                        <a href="" class="nav__link">
-                            <div class="circle ">
-                                <iconify-icon icon="icon-park-solid:phone-telephone" class="icon_color"></iconify-icon>
-                            </div>
-                            <span class="nav__name">Contacto</span>
-                        </a>
-                        
-                    </div>                    
+                    
                 </div>
-            </nav>
+                <div>
+                    <!--------------------------------------------->
+                    <a href="" class="nav__link">
+                        <div class="circle ">
+                            <iconify-icon icon="icon-park-solid:phone-telephone" class="icon_color"></iconify-icon>
+                        </div>
+                        <span class="nav__name">Contacto</span>
+                    </a>
+                    
+                </div>
+
+
+            </div>
         </header>
         <main class="content">
-            <div class="slider">
-                <input type="button" name="slider">
-                <div class="imgBox">
-                    <img src="./assets/img/home/adorable-perrito-al-aire-libre.jpg" alt="">
-                    <div class="contenido">
-                        <h1>Donaciones</h1>
-                    </div>
-                </div>
-            </div>
             <section class="section">
-                
+                <div class="fondo">
+                    <div class="inputs_inicio">
+                        <h2 class="titulo_sesion">Iniciar sesión</h2>
+                        <div class="grupo">
+                            <div class="input_group">
+                                <input type="email" placeholder="email@ejemplo.com" id="email" class="input_sesion">
+                                <label for="email" class="label_sesion">
+                                    <iconify-icon icon="material-symbols:mail-outline" class="icon_sesion"></iconify-icon>
+                                    Correo electrónico
+                                </label>
+                            </div>
+                            <div class="input_group">
+                            <input type="password" placeholder="**********" id="password" class="input_sesion">
+                                <label for="password" class="label_sesion">
+                                    <iconify-icon icon="mdi:password-outline" class="icon_sesion"></iconify-icon>
+                                    Contraseña
+                                </label>
+                            </div>
+                            <div class="input_checkbox">
+                                <input type="checkbox" id="myCheckbox" >
+                                <label for="myCheckbox" class="check_label" >Recordarme</label>
+                            </div>
+                        </div>
+                        
+                        <a class="btn_iniciarSesion" href="">Iniciar Sesión</a> 
+                        <span class="divisor"></span>
+                        <div class="links_opciones_sesion">
+                            <a class="recuperar_contraseña">¿Olvidaste tu contraseña?</a>
+                            <p class="crear_cuenta">¿Aún no tienes cuenta? <a href="crear_cuenta.html">Crea una aquí</a></p>
+                        </div>
+                       
+                    </div>
+                   
+                </div>
             </section>
           
         </main>
     </div>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-    
 </body>
 </html>
