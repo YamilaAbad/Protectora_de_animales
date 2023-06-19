@@ -46,7 +46,7 @@
                             </li>
                             <!--------------------------------------------->
                             <li class="nav__item">
-                                <a href="" class="nav__link option_oculta">
+                                <a href="./donaciones.html" class="nav__link option_oculta">
                                         <iconify-icon icon="subway:usd" class="icon"></iconify-icon>
                                     <span class="nav__name">Doná</span>
                                 </a>
@@ -67,29 +67,101 @@
                                 <iconify-icon icon="icon-park-solid:phone-telephone" class="icon_color"></iconify-icon>
                             </div>
                             <span class="nav__name">Contacto</span>
-                        </a>
-                        
+                        </a>                        
                     </div>                    
                 </div>
             </nav>
         </header>
         <main class="content">
-            <div class="slider">
-                <input type="button" name="slider">
-                <div class="imgBox">
-                    <img src="./assets/img/home/adorable-perrito-al-aire-libre.jpg" alt="">
-                    <div class="contenido">
-                        <h1>Donaciones</h1>
-                    </div>
-                </div>
+            <div class="carousel-container">
+          <div class="carousel">
+            <div class="slide active">
+                 <div class="over"></div>
+              <img src="assets/img/home/adorable-perrito-al-aire-libre-mobile.jpg" class="img_carrusel">
             </div>
+            <div class="slide">
+                 <div class="over"></div>
+              <img src="assets/img/home/gato-domestico-gordito-apoyado-cachorro-marron-acostado-sobre-superficie-blanca-mobile.jpg" class="img_carrusel">
+            </div>
+            <div class="slide">
+                 <div class="over"></div>
+              <img src="assets/img/home/retrato-grupo-adorables-cachorros-mobile.jpg" class="img_carrusel">
+            </div>
+          </div>
+          <div class="progress-bar">
+            <input type="radio" name="progress" id="progress1" checked>
+            <input type="radio" name="progress" id="progress2">
+            <input type="radio" name="progress" id="progress3">
+          </div>
+        </div>
+
             <section class="section">
+                <div class="card_home">
+                     <div class="card">
+                        <div class="overCard"></div>
+                        <a href="./iniciar_sesion.html" >
+                            <img src="assets/img/home/card1.jpg" class="img_Card">
+                            <h1>Mascotas Perdidas</h1>
+                        </a>
+                     </div>
+                     <div class="card">
+                        <div class="overCard"></div>
+                         <a href="./iniciar_sesion.html">
+                            <img src="assets/img/home/card2.jpg" class="img_Card">
+                            <h1>Castraciones Gratuitas</h1>
+                        </a>
+                     </div>
+                     <div class="card">
+                        <div class="overCard"></div>
+                         <a href="./iniciar_sesion.html">
+                            <img src="assets/img/home/card3.jpg" class="img_Card">
+                            <h1>Donaciones</h1>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <div class="overCard"></div>
+                        <a href="./iniciar_sesion.html">
+                            <img src="assets/img/home/card4.jpg" class="img_Card">
+                            <h1>Calendarios</h1>
+                        </a>
+                    </div>               
+                
+                </div>
+                <!--Testimonios-->
+                <div class="bannerHome">
+                    <img src="./assets/img/home/banner1.jpg">
+                    <h1>Testimonios</h1>
+                </div>
+
+                <div class="card_testimonios">
+                    <img src="./assets/img/home/testimonio1-mobile.jpg" class="img_testimonio"></img>
+                    <span class="txt_testimonio">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </span>
+                </div>
+                <div class="card_testimonios">
+                    <img src="./assets/img/home/testimonio2.jpg" class="img_testimonio"></img>
+                    <span class="txt_testimonio">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </span>
+                </div>
+                <div class="card_testimonios">
+                    <img src="./assets/img/home/testimonio3.jpg" class="img_testimonio"></img>
+                    <span class="txt_testimonio">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                    </span>
+                </div>
                 
             </section>
           
         </main>
     </div>
+
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
     
 </body>
 </html>
