@@ -395,10 +395,10 @@ main{
     background-image: url(../img/fondo.png);
     width: 100%;
     height: 100vh;
-   
     background-attachment: fixed;
-   
-   
+    display: flex;
+    position: absolute;
+    
 }
 .inputs_inicio{
     display: flex;
@@ -406,12 +406,10 @@ main{
     position: absolute;
     top:15%;
     width: 85%;
-    margin: var(--marg-32);
 }
 .titulo_sesion{
     text-align: center;
     font-size: var(--font-size-32);
-    margin-bottom: var(--marg-24);
 }
 .grupo{
     width: 80%;
@@ -598,14 +596,14 @@ main{
 }
 /*-----------------------------------PERFIL USUARIO----------------------------------------------------*/
 .info_user{
+    margin-top: var(--marg-32);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/fondo.png), linear-gradient(180deg, #ffe85191 0, #ffdc5081 8.33%, #ffce516e 16.67%, #ffc05279 25%, #ffaf5367 33.33%, #ff9b5362 41.67%, #f2885350 50%, #e1785265 58.33%, #d0685146 66.67%, #c25c5146 75%, #b5525257 83.33%, #aa4a546b 91.67%, #a0445569 100%);
+   /*  background-image: linear-gradient(180deg, #ffe85191 0, #ffdc5081 8.33%, #ffce516e 16.67%, #ffc05279 25%, #ffaf5367 33.33%, #ff9b5362 41.67%, #f2885350 50%, #e1785265 58.33%, #d0685146 66.67%, #c25c5146 75%, #b5525257 83.33%, #aa4a546b 91.67%, #a0445569 100%); */
 }
 .content_user{
-    margin-top: var(--marg-48);
     border-radius: 50%;
     width: 200px;
     height: 200px;
@@ -621,15 +619,15 @@ main{
 
 .card_user{
     display: flex;
-    margin: var(--marg-32);
-    width: 85%;
+    margin-top: var(--marg-32);
+    width: 100%;
     height: 100px;
     border-radius: 3px;
     text-align: center;
 }
 
 .img_btn_user, .overlay_user{
-    width: 370px;
+    width: 365px;
     height: 100px;
     object-fit: cover;
     border-radius: 3px;
@@ -652,8 +650,8 @@ main{
 /*------------------------------------TABLA DONACIONES------------------------------*/
 .tabla_donaciones{
     display: flex;
-    width: 85%;
-    margin: var(--marg-32);
+    margin-top: var(--marg-32);
+    
     border: 2px solid var(--color_principal);
     background: white;
     border-collapse: collapse;
@@ -677,22 +675,32 @@ main{
     padding: var(--marg-16);
     font-size: var(--font-size-18);
 }
-.h4_volver,.btn_volver{
+.h4_volver{
     font-size: var(--font-size-18);
     width: 85%;
     margin: var(--marg-32);
     text-align: center;
 }
 .btn_volver{
-    color: var(--color_links);
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    margin-left: 25%;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: var(--color_fuente_claro);
+    padding: var(--marg-8)  var(--marg-16) ;
+    font-size: var(--font-size-18);
+    text-align: center;
+    background-color: var(--color_boton_aceptar);
+    margin-bottom: 150px;
 }
 
 /*----------------------------FORMULARIO ANIMAL PERDIDO----------------------------------------------*/
 .formulario{
     display: flex;
     flex-direction: column;
-    width: 85%;
-    margin-left: var(--marg-32); 
+    background-color: var(--color_fondo);
 }
 .datos{
     border: 2px solid var(--color_principal);
@@ -707,6 +715,7 @@ main{
     
 }
 .input_texto, .campo textarea{
+    background-color: var(--color_fondo);
     height: 40px;
     border: 1px solid var(--color_principal) ;
 }
