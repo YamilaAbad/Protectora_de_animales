@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animacion_btn.css">
     <title>Protectora de animales</title>
 </head>
 <body>
@@ -74,45 +75,47 @@
         <main class="content">
             <section class="section">
                 <div class="fondo">
-                        <div class="inputs_inicio">
-                            <h2 class="titulo_sesion">Crear cuenta</h2>
-                            <div class="grupo">
-                                <div class="input_group">
-                                    <input placeholder="email@ejemplo.com" id="email" class="input_sesion">
-                                    <label for="email" class="label_sesion">
-                                        <iconify-icon icon="material-symbols:mail-outline" class="icon_sesion"></iconify-icon>
-                                        Correo electrónico
-                                    </label>
-                                </div>
-                                <div class="input_group">
-                                    <input type="name" placeholder="Tu nombre de usuario" id="name" class="input_sesion">
-                                    <label for="name" class="label_sesion">
-                                        <iconify-icon icon="mdi:user" class="icon_sesion"></iconify-icon>
-                                        Nombre de Usuario
-                                    </label>
-                                </div>
-                                <div class="input_group">
-                                    <input type="password" placeholder="**********" id="password" class="input_sesion">
-                                    <label for="password" class="label_sesion">
-                                        <iconify-icon icon="mdi:password-outline" class="icon_sesion"></iconify-icon>
-                                        Contraseña
-                                    </label>
-                                </div>
-                                <div class="input_group">
-                                    <input type="password" placeholder="**********" id="password" class="input_sesion">
-                                    <label for="password" class="label_sesion">
-                                        <iconify-icon icon="mdi:password-outline" class="icon_sesion"></iconify-icon>
-                                        Repetir contraseña
-                                    </label>
-                                </div>
+                    <form class="formulario">
+                        <div class="datos">
+                            <div class="campo">
+                                <label for="nombre">Nombre del animal:</label>
+                                <input type="text" id="nombre" name="nombre" class="input_texto">
                             </div>
-                            <a class="btn_crearCuenta" id="enlace" href="perfil.html">Crear</a> 
+                            <div class="campo">
+                                <label for="fecha">Fecha en la que se extravió:</label>
+                                <input type="date" id="fecha" name="fecha">
+                            </div>
+                            <div class="campo">
+                                <label for="nombre">Numero de contacto:</label>
+                                <input type="number" id="numero" name="numero" class="input_texto">
+                            </div>
+                            <div class="campo">
+                                <label for="nombre">Nombre y apellido del dueño:</label>
+                                <input type="text" id="nombre" name="nombre" class="input_texto">
+                            </div>
+                            <div class="campo">
+                                <label for="descripcion">Descripción del animal para una mejor identificación:</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                            </div>
+                            <div class="campo">
+                                <label for="imagen">Suba una foto del animal perdido</label>
+                                <input type="file" id="imagen" name="imagen">
+                            </div>
                         </div>
-                </div>
+                    </form>
+                    <button class="button">
+                        <span class="default">Enviar</span>
+                        <span class="success">Enviado <iconify-icon icon="material-symbols:check" style="color: #24c115;"></iconify-icon></span>
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </button>
+                </div>   
             </section>
-          
         </main>
     </div>
+   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+    <script src="./assets/js/btn_enviar_animacion.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>

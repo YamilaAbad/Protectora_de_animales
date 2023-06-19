@@ -12,6 +12,7 @@
     --color_boton_enviar: #24c115;
     --color_boton_inactivo: #6d6a7c;
     --color_boton_aceptar: #166fe5;
+    --color_boton_cancelar: #BB2D3B;
 
     --color_links: #0000F1;
 
@@ -235,7 +236,7 @@ main{
 }
 
 /*---------------------------------- CARDS ADOPCION --------------------------*/
-.cards_adopcion{
+.cards_adopcion,.opciones_usuario{
     margin-top: var(--marg-24);
     display: flex;
     flex-wrap: wrap;
@@ -245,7 +246,7 @@ main{
     margin-bottom: var(--marg-24);
     width: 50%;
 }
-.overlay{
+.overlay, .overlay_user{
     position: absolute;
     content: '';
     background-color: var(--overlayCard);
@@ -313,9 +314,9 @@ main{
     background-image: url(../img/fondo.png);
     width: 100%;
     height: 100vh;
-    background-size: cover;
+   
     background-attachment: fixed;
-    
+   
    
 }
 .inputs_inicio{
@@ -436,6 +437,125 @@ main{
     color: var(--color_links);
 }
 
+/*-----------------------------------PERFIL USUARIO----------------------------------------------------*/
+.info_user{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/fondo.png), linear-gradient(180deg, #ffe85191 0, #ffdc5081 8.33%, #ffce516e 16.67%, #ffc05279 25%, #ffaf5367 33.33%, #ff9b5362 41.67%, #f2885350 50%, #e1785265 58.33%, #d0685146 66.67%, #c25c5146 75%, #b5525257 83.33%, #aa4a546b 91.67%, #a0445569 100%);
+}
+.content_user{
+    margin-top: var(--marg-48);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+.foto_perfil{
+    width: 195px;
+    height: 195px;
+}
+.nombre_user{
+    margin-top: var(--marg-8);
+    font-size: var(--font-size-32);
+}
+
+.card_user{
+    display: flex;
+    margin: var(--marg-32);
+    width: 85%;
+    height: 100px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.img_btn_user, .overlay_user{
+    width: 370px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.titulo_card_user{
+    position: relative;
+    text-align: center;
+    margin-top: -75px;
+    z-index: 1;
+    color: var(--color_fuente_claro);
+    font-size: var(--font-size-32);
+}
+.btn_cerrar_sesion{
+    width: 370px;
+    height: 100px;
+    background-color: var(--color_boton_cancelar);
+}
+
+/*------------------------------------TABLA DONACIONES------------------------------*/
+.tabla_donaciones{
+    display: flex;
+    width: 85%;
+    margin: var(--marg-32);
+    border: 2px solid var(--color_principal);
+    background: white;
+    border-collapse: collapse;
+    padding:15px;
+    box-shadow: 0 1px 5px var(--color_principal);
+  
+}
+.tabla_donaciones tr{
+    margin-top: var(--marg-32);
+    border-top: 1px solid #C1C3D1;
+    border-bottom: 1px solid #C1C3D1;
+    color:var(--color_fuente_oscuro);
+    font-weight:normal;
+   
+}
+.titulo_tabla_donaciones{
+    width: 90%;
+    font-size: var(--font-size-24);
+}
+.descripcion_tabla_donaciones{
+    padding: var(--marg-16);
+    font-size: var(--font-size-18);
+}
+.h4_volver,.btn_volver{
+    font-size: var(--font-size-18);
+    width: 85%;
+    margin: var(--marg-32);
+    text-align: center;
+}
+.btn_volver{
+    color: var(--color_links);
+}
+
+/*----------------------------FORMULARIO ANIMAL PERDIDO----------------------------------------------*/
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-left: var(--marg-32); 
+}
+.datos{
+    border: 2px solid var(--color_principal);
+    margin-top: var(--marg-32);
+    border-radius: 3px;
+    background-color: var(--color_fondo);
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+    margin: var(--marg-24);
+    
+}
+.input_texto, .campo textarea{
+    height: 40px;
+    border: 1px solid var(--color_principal) ;
+}
+.campo input,textarea{
+    margin-top: var(--marg-8);
+    border-radius: 3px;
+    
+}
 
 
 /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
