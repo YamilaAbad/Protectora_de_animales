@@ -206,85 +206,108 @@ main{
     display: none;
 }
 /*--------------------- HOME -----------------------------*/
-.carousel-container {
-  position: relative;
-  width: 100%;
-  max-width: 360px; /* Ajusta el ancho según tus necesidades */
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.carousel {
-  display: flex;
-  width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-}
-
-.slide {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-}
-.over{
-    position: absolute;
-    content: '';
-    background-color: var(--overlayCard);
-}
-.img_carrusel, .over{
-    width: 360px;
-    height: 200px;
-    object-fit: cover;
-    text-align: center;
-    
-}
-.progress-bar {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.progress-bar input[type="radio"] {
-  display: none;
-}
-
-.progress-bar input[type="radio"] + label {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: #ccc;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-.progress-bar input[type="radio"]:checked + label {
-  background: #000;
+/* Opciones */
+.group_card_home{
+    margin-bottom: var(--marg-24);
 }
 .card_home{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;    
+    margin: var(--marg-16) 0;
+    border-radius:10px;
 }
-.card{
-    display: flex;
+.card_home > .card_img{
+    width: 100%;
+    height:100%;
+}
+.card_img{
+    filter: blur(1px);
+    position:relative;
+    
+}
+.card_home::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:96%;
+    border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    mix-blend-mode: multiply;
+}
+.card_home h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width:100%;
+    padding: auto 3rem;
+    text-align: center;
+    font-size: var(--font-size-24);
+    font-weight: 900;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+/*------- Sesion testimonio -------*/
+.bannerHome__testimonio{
+    width: 100%;
+    height:100%;
+    overflow: hidden;
+    position: relative;    
+}
+.bannerHome__testimonio img{
+    width: 100%;
+    height:50%;
+}
+/*Efecto de la foto*/
+img{
+    position:relative;
+    filter: blur(1px);
+}
+.bannerHome__testimonio::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:90%;
+    background-color: rgba(0, 0, 0, 0.6);
+    mix-blend-mode: multiply;
+}
+.bannerHome__testimonio h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    text-align:center;
+    padding:0.5rem;
+    font-size: var(--font-size-32);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.group_card_testimonio{
+    margin-top: var(--marg-16);
+    margin-bottom: var(--marg-64);
+}
+.card_testimonios{
+    border:1px solid rgba(20, 18, 18, 0.1);
+    border-radius:10px 10px 10px 10px;
+    margin-bottom: var(--marg-16);
+    width: 100%;
+    box-shadow: 3px 4x 5px 0px rgba(0, 0, 0, 0.5);
 
 }
-.overCard{
-    position: relative;
-    content: '';
-    background-color: var(--overlayCard);
+.img_testimonio{
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
 }
-.img_Card .overCard{
-     width: 296px;
-    height: 100px;
-    object-fit: cover;
-    text-align: center;
-}
-.card h1{
-    position: absolute;
-    color: var( --color_fuente_claro);
-    text-decoration: none;
+.txt_testimonio p{
+    text-align: justify;
+    margin: var(--marg-8);
 }
 /*------------------ IMAGEN BANNER ---------------------------------------*/
 .img_banner{
@@ -317,14 +340,77 @@ main{
 }
 
 /*---------------------------------- CARDS ADOPCION --------------------------*/
-.cards_adopcion,.opciones_usuario{
-    margin-top: var(--marg-24);
+.container_adopciones{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: var(--marg-64) auto;
+}
+.groups_cards_adopcion{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 170px;
+    grid-gap: 1rem;
+    width: 100%;
+}
+.card_adopcion{
+    width: 100%;
+    height: 170px;
+    overflow: hidden;
+    position: relative; 
+    border-radius: 3px;
+}
+.card_adopcion img{
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+.img_perro_adop{
+ position:relative;
+}
+.card_adopcion::after{
+    content:"";
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:25%;
+    background-color: var(--overlayCard);
+    border-radius: 3px;
+    mix-blend-mode: multiply;
+}
+
+.card_adopcion h4{
+    color: white;
+    position: absolute;
+    font-size: var(--font-size-18);
+    left:0;
+    bottom: 0;
+    right: 50%;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0;
+    z-index: 1;
+}
+.opciones_usuario{
+    margin-top: var(--marg-24); 
+    display: flex;
+    margin-bottom: var(--marg-72);
+}
+.overlay, .overlay_user{
+    position: absolute;
+    content: '';
+    background-color: var(--overlayCard);
+}
+/*.cards_adopcion,.opciones_usuario{
+    margin-top: var(--marg-24); 
+    display: flex;
     margin-bottom: var(--marg-72);
 }
 .card_adopcion{ 
-    margin-bottom: var(--marg-24);
+    margin-bottom: var(--marg-24); 
     width: 50%;
 }
 .overlay, .overlay_user{
@@ -356,7 +442,7 @@ main{
     z-index: 1;
     color: var(--color_fuente_claro);
     font-size: var(--font-size-24);
-}
+}*/
 
 /*------------------------------------ Descripción individual del perro mobile --------------------------*/
 .cartel_perro{
@@ -524,6 +610,7 @@ main{
     padding-top: 2rem;
 
 }
+
 .botonesDePago{
     width: 100%;
     height: 100px;
@@ -543,56 +630,79 @@ main{
 }
 
 /*------------------------ FORMULARIO DE DONACIONES ----------------------------------*/
+.container_form,
+.cardFormulario{
+    display: flex;
+}
+.container_form{   
+    max-width:100%;
+    justify-content: center;
+    margin: var(--marg-8) auto;
+    height:100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+.container_form::-webkit-scrollbar{
+    width: 0;
+    background: transparent;
+}
 .cardFormulario{
     background: var(--color_fondo);
-    display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    box-shadow: 3px 3px 4px 0 rgba(0, 0, 0, 0.50);
-    padding-bottom: 2rem;
-    position: absolute;
-    max-width: 85%;
+    border-radius: 10px;
+    border: 1px solid var(--color_boton_inactivo);
+    padding-bottom: 1rem;
+    height:860px;
+    margin-bottom: var(--marg-8);
+   
 } 
+.form{
+    margin: var(--marg-16);
+}
+.inputs_donac{
+    margin-bottom: var(--marg-16);
+}
 .info_descripcion{
-    position: relative;
     text-align: justify;
     font-size: var(--font-size-18);
-    width: 270px;
+    margin: var(--marg-8) var(--marg-16) 0;
 }
 .label_formulario{
-    position: relative;
-    margin-left:var(--marg-8);
     opacity: .25s;
+    margin-bottom: var(--marg-8);
 }
 .input_area{
     display: block;
     border: none;
     outline: none;
     border-radius: 4px;
-    font-family: var(--fuente-general);
     width: 100%;
     height: 60px;
-    padding-left:var(--marg-8) ;
+    padding-left:var(--marg-8);
+}
+.input_area{
+    font-family: var(--fuente-general);
     background-color:var(--color_fondo);
-    border: 2px solid var(--color_principal);
-    position: relative;
+    border: 2px solid var(--color_principal);   
+}
+.content_form{
+    width:100%;
 }
 .btn_enviar{
-    position: relative;
-    color: var(--color_fuente_claro);
-    width: 240px;
-    height: 40px;
-    font-size: var(--font-size-18);
-    padding-top: var(--marg-8);
-    padding-bottom: var(--marg-8);
-    text-align: center;
+    width: 100%;
+    height: 40px;    
+    padding-bottom:0.25rem;
     border-radius: 5px;
-    box-shadow: 0 0 3px var(--color_nav);
-    margin: var(--marg-16) auto;
+    margin-bottom: var(--marg-24);
 }
 .btn_enviar{
     background: var(--color_boton_enviar);
+    box-shadow: 0 0 3px var(--color_nav);
+    color: var(--color_fuente_claro);
+    font-size: var(--font-size-18);
+    text-align: center;
 }
 /*-----------------------------------PERFIL USUARIO----------------------------------------------------*/
 .info_user{
