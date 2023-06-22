@@ -48,9 +48,8 @@
     padding: 8px 0;
     min-width: 100px;
     text-align: center;
-    margin: 32px;
+    margin-top: 24px;
     left: 25%;
-    text-align: center;
     line-height: 24px;
     width: 150px;
     height: 50px;
@@ -134,13 +133,13 @@
   .button span.success {
     z-index: 0;
     position: absolute;
-    left: 0;
+    left: 25%;
     right: 0;
     top: 8px;
     -webkit-transform: rotate(calc(var(--rotate) * -1deg)) scale(var(--success-scale)) translateZ(0);
             transform: rotate(calc(var(--rotate) * -1deg)) scale(var(--success-scale)) translateZ(0);
     opacity: var(--success-opacity);
     color: #24c115;
-    font-size: 24px;
+    font-size: 18px;
   }
 

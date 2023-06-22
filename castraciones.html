@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animacion_btn.css">
+    <title>Protectora de animales</title>
+</head>
+<body>
+    <div class="grid_container">
+        <header class="content header">
+            <div class="nav__content">
+                <div class="nav__header_icon">
+                    <a href="home" class="nav__circle-icon">
+                        <img src="./assets/img/logo_refugio.png" alt="logo" class="img__logo">
+                    </a>
+                    <div class="nav__title">
+                        <span class="name__title"><h1>Protectora de Animales Analia Dekker</h1></span>
+                    </div>
+                </div>
+                <div class="container-menu">
+
+                    <div class="nav__menu" id="nav-menu">
+                        <ul class="content nav__list">
+                            <!-- Opciones del menu-->
+                            <li class="nav__item">
+                                <a href="" class="nav__link active">
+                                    <iconify-icon icon="ant-design:home-filled" class="icon"></iconify-icon>
+                                    <span class="nav__name">Inicio</span>
+                                </a>
+                            </li>
+                            <!--------------------------------------------->
+                            <li class="nav__item">
+                                <a href="adopciones.html" class="nav__link">
+                                    <div class="circle ">
+                                        <iconify-icon icon="cil:dog" class="icon_color"></iconify-icon>
+                                    </div>
+                                    <span class="nav__name">Adoptar</span>
+                                </a>
+                            </li>
+                            <!--------------------------------------------->
+                            <li class="nav__item">
+                                <a href="" class="nav__link">
+                                        <iconify-icon icon="subway:usd" class="icon"></iconify-icon>
+                                    <span class="nav__name">Doná</span>
+                                </a>
+                            </li>
+                            <!--------------------------------------------->
+                            <li class="nav__item">
+                                <a href="iniciar_sesion.html" class="nav__link">
+                                    <iconify-icon icon="iconamoon:profile-circle-fill" class="icon"></iconify-icon>
+                                    <span class="nav__name">Perfil</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                <div>
+                    <!--------------------------------------------->
+                    <a href="" class="nav__link">
+                        <div class="circle ">
+                            <iconify-icon icon="icon-park-solid:phone-telephone" class="icon_color"></iconify-icon>
+                        </div>
+                        <span class="nav__name">Contacto</span>
+                    </a>
+                    
+                </div>
+
+
+            </div>
+        </header>
+        <main class="content"> 
+            <div class="fondo">
+                <section class="section">
+                        <form class="formulario">
+                            <div class="datos">
+                                <div class="campo">
+                                    <label for="nombre">Nombre y apellido del dueño:</label>
+                                    <input type="text" id="nombre" name="nombre" class="input_texto">
+                                </div>
+                                <div class="campo">
+                                    <label for="nombre">Nombre del animal:</label>
+                                    <input type="text" id="nombre" name="nombre" class="input_texto">
+                                </div>
+                                <div class="campo">
+                                    <label for="nombre">Numero de contacto:</label>
+                                    <input type="number" id="numero" name="numero" class="input_texto">
+                                </div>
+                                <div class="campo">
+                                    <label for="tipo_animal">Seleccione el tipo de animal a castrar</label>
+                                    <select class="select_animal">
+                                        <option value="perro">Perro</option>
+                                        <option value="gato">Gato</option>
+                                    </select>
+                                </div>
+                                <p class="parrafo_castracion">Una vez que envie su petición de castración nos estaremos poniendo en contacto con usted.</p>
+                                <p class="parrafo_castracion">Tenga en cuenta que al momento de hacer castraciones, primero debemos llenar un cupo para que nuestro 
+                                    veterinario de confianza venga a la protectora a castrar.
+                                </p>
+                            </div> 
+                        </form>
+                    <button class="button">
+                            <span class="default">Enviar</span>
+                            <span class="success">Pedido de castración realizado<iconify-icon icon="material-symbols:check" style="color: #24c115;"></iconify-icon></span>
+                            <div class="left"></div>
+                            <div class="right"></div>
+                        </button>
+                </section>
+            </div>
+        </main>
+    </div>
+   
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+    <script src="./assets/js/btn_enviar_animacion.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>

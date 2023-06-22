@@ -686,7 +686,6 @@ main{
     width: 150px;
     height: 50px;
     margin-left: 25%;
-    border: 1px solid red;
     border-radius: 3px;
     color: var(--color_fuente_claro);
     padding: var(--marg-8)  var(--marg-16) ;
@@ -723,8 +722,19 @@ main{
     margin-top: var(--marg-8);
     border-radius: 3px;
 }
+.parrafo_castracion{
+    margin: var(--marg-24);
+    text-align: center;
+}
 
-
+/*-----------------------------PEDIDO DE CASTRACIÓN---------------------------*/
+.tipo_animal{
+    font-size: var(--font-size-18);
+}
+.select_animal{
+    font-size: var(--font-size-18);
+    margin-top: var(--marg-8);
+}
 /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
 @media (min-width: 599px) and (max-width: 1023px) {
     .header {
