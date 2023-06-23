@@ -206,26 +206,34 @@ main{
     display: none;
 }
 /*--------------------- HOME -----------------------------*/
+.container_home_card{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 /* Opciones */
 .group_card_home{
     margin-bottom: var(--marg-24);
 }
 .card_home{
-    width: 100%;
-    height:100%;
+    width: 296px;
+    height:100px;
     overflow: hidden;
     position: relative;    
     margin: var(--marg-16) 0;
     border-radius:10px;
+
 }
-.card_home > .card_img{
+.card_home img{
     width: 100%;
     height:100%;
+    object-fit: cover;
 }
 .card_img{
     filter: blur(1px);
     position:relative;
-    
 }
 .card_home::after{
     content:"";
@@ -233,7 +241,7 @@ main{
     top:0;
     left:0;
     width:100%;
-    height:96%;
+    height:100%;
     border-radius:10px;
     background-color: rgba(0, 0, 0, 0.6);
     mix-blend-mode: multiply;
@@ -254,13 +262,14 @@ main{
 /*------- Sesion testimonio -------*/
 .bannerHome__testimonio{
     width: 100%;
-    height:100%;
+    height:100px;
     overflow: hidden;
     position: relative;    
 }
 .bannerHome__testimonio img{
     width: 100%;
-    height:50%;
+    height:100%;
+    object-fit: cover;
 }
 /*Efecto de la foto*/
 img{
@@ -273,7 +282,7 @@ img{
     top:0;
     left:0;
     width:100%;
-    height:90%;
+    height:100%;
     background-color: rgba(0, 0, 0, 0.6);
     mix-blend-mode: multiply;
 }
@@ -284,7 +293,7 @@ img{
     left:50%;
     text-align:center;
     padding:0.5rem;
-    font-size: var(--font-size-32);
+    font-size: var(--font-size-48);
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -397,12 +406,22 @@ img{
 .opciones_usuario{
     margin-top: var(--marg-24); 
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: var(--marg-72);
 }
 .overlay, .overlay_user{
     position: absolute;
     content: '';
     background-color: var(--overlayCard);
+}
+.overlay{
+    box-sizing: border-box;
+    margin: var(--marg-32);
+    width: 140px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 3px;
+    text-align: center;    
 }
 /*.cards_adopcion,.opciones_usuario{
     margin-top: var(--marg-24); 
@@ -602,10 +621,16 @@ img{
     color: var(--color_links);
 }
 /*------------------------  DONACIONES ----------------------------------*/
-.container_buttom{
+.container_donaciones{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container_buttom{
+    display: flex;
+    flex-wrap: wrap;
     align-content: center;
     padding-top: 2rem;
 
