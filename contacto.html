@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animacion_btn.css">
     <title>Protectora de animales</title>
 </head>
 <body>
@@ -75,56 +76,71 @@
             </nav>
         </header>
         <main class="content">
-            <div class="fondo"></div>
+            <div class="banner">
+                <img src="./assets/img/contacto2.png" class="img_banner">
+                <h2 class="titulo_banner">Contacto</h2>
+            </div>  
+            
             <section class="section">
-                    <div class="info_user">
-                        <div class="content_user">
-                            <img class="foto_perfil" src="./assets/img/user3.png">
-                        </div>
-                        <h4 class="nombre_user">Nombre Usuario</h4>
+                <div class="contact-wrapper">
+                    <form class="formulario">
+                        <div class="datos">
+                            <div class="campo">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" class="input_texto">
+                            </div>
+                            <div class="campo">
+                                <label for="nombre">Correo:</label>
+                                <input type="text" id="nombre" name="nombre" class="input_texto">
+                            </div>
+                            <div class="campo">
+                                <label for="descripcion">Mensaje:</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
+                            </div>
+                        </div> 
+                    </form>
+                    <button class="button">
+                        <span class="default">Enviar</span>
+                        <span class="success">Enviado <iconify-icon icon="material-symbols:check" style="color: #24c115;"></iconify-icon></span>
+                        <div class="left"></div>
+                        <div class="right"></div>
+                    </button>
+                    <h4 class="titulo_contacto_social">También puedes encontrarnos en</h4>
+                    <div class="container_iconos_social">
+                        <a class="btn_icono_social" href="#">
+                            <i class="icono_social">
+                                <iconify-icon class="icono_social_ic" icon="basil:facebook-solid" style="color: #0000F1";width="30" height="30"></iconify-icon>
+                            </i>
+                        </a>
+                        <a class="btn_icono_social" href="#">
+                            <i class="icono_social">
+                                <iconify-icon class="icono_social_ic" icon="skill-icons:instagram" width="30" height="30"></iconify-icon>
+                            </i>
+                        </a>
+                        <a class="btn_icono_social" href="#">
+                            <i class="icono_social">
+                                <iconify-icon class="icono_social_ic" icon="ic:baseline-whatsapp" style="color: #24c115" width="30" height="30"></iconify-icon>
+                            </i>
+                        </a>
                     </div>
-                
-                    <div class="opciones_usuario">
-                        <div class="card_user">
-                            <a href="donaciones.html" class="btn_perfil">
-                                <div class="overlay_user"></div>
-                                <img src="./assets/img/donar.jpg" alt="opcion_donacion" class="img_btn_user"></img>
-                                <h4 class="titulo_card_user">Donar</h4> 
-                            </a>
-                        </div>
-                        <div class="card_user">
-                            <a href="mis_donaciones.html" class="btn_perfil">
-                                <div class="overlay_user"></div>
-                                <img src="./assets/img/mis_donaciones.jpg" alt="opcion_mis_donacion" class="img_btn_user"></img>
-                                <h4 class="titulo_card_user">Mis donaciones</h4> 
-                            </a>
-                        </div>
-                        <div class="card_user">
-                            <a href="perdidos_publicar.html" class="btn_perfil">
-                                <div class="overlay_user"></div>
-                                <img src="./assets/img/perro_perdido.jpg" alt="opcion_perdidos" class="img_btn_user"></img>
-                                <h4 class="titulo_card_user">Publicar amigo perdido</h4> 
-                            </a>
-                        </div>
-                        <div class="card_user">
-                            <a href="castraciones.html" class="btn_perfil">
-                                <div class="overlay_user"></div>
-                                <img src="./assets/img/castraciones.jpg" alt="opcion_castracion" class="img_btn_user"></img>
-                                <h4 class="titulo_card_user">Quiero castrar</h4> 
-                            </a>
-                        </div>
-                        <div class="card_user_2">
-                            <a href="index.html" class="btn_perfil">
-                                <div class="btn_cerrar_sesion"></div>
-                                <h4 class="titulo_card_user">Cerrar sesión</h4> 
-                            </a>
-                        </div>
+                    <div class="ubicacion">
+                        <iconify-icon class="icono_ubicacion" icon="carbon:location" style="color: red;" width="30" height="30"></iconify-icon>
+                        <h5 class="titulo_contacto_ubi"> Nuestra dirección: ruta 3 km 450, Adolfo Gonzáles Chaves, Argentina</h5>
                     </div>
+                    
+                    <div class="mapa">
+                        <p class="como_llegar">Como llegar:</p>
+                        <div class="mapouter"><div class="gmap_canvas"><iframe width="250" height="250" id="gmap_canvas" src="https://maps.google.com/maps?q=+ruta+3+km+450%2C+Adolfo+Gonz%C3%A1les+Chaves%2C+Argentina&t=&z=14&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://online-timer.me/"></a><br><style>.mapouter{position: relative;text-align: right;height: 250px;width: 250px;}</style><a href="https://www.embedmaps.co">embed google maps api</a><style>.gmap_canvas{overflow: hidden;background: none !important;height: 250px;width: 250px;}</style></div></div>
+                    </div>
+                    <h3 class="titulo_quienes_somos">¿Te interesa saber mas de nosotros? <iconify-icon icon="icon-park-outline:hand-right" style="color:#ff7559;" width="20" height="20"></iconify-icon><a href="./quienes_somos.html"> haz click aquí</a></h3>
+                </div>
                 
             </section>
-         
+           
         </main>
     </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+    <script src="./assets/js/btn_enviar_animacion.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 </html>

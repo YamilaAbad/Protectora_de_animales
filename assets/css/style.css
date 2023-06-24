@@ -327,6 +327,7 @@ img{
     position: absolute;
     display: flex;
     flex-direction: column;
+    object-fit: cover;
 }
 .banner::before{
     position: absolute;
@@ -753,15 +754,35 @@ img{
 }
 
 .card_user{
-    display: flex;
-    margin-top: var(--marg-32);
-    width: 100%;
-    height: 100px;
-    border-radius: 3px;
-    text-align: center;
+    width: 296px;
+    height:100px;
+    overflow: hidden;
+    position: relative;    
+    margin: var(--marg-32);
+    border-radius:10px;
+    margin-top: var(--marg-8);
+}
+.card_user_2{
+    width: 296px;
+    height:100px;
+    overflow: hidden;
+    position: relative;    
+    margin: var(--marg-32);
+    border-radius:10px;
+    margin-top: var(--marg-8);
+}
+.card_user::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    background-color: rgba(0, 0, 0, 0.6);  
 }
 
-.img_btn_user, .overlay_user{
+.img_btn_user{
     width: 365px;
     height: 100px;
     object-fit: cover;
@@ -771,10 +792,10 @@ img{
 .titulo_card_user{
     position: relative;
     text-align: center;
-    margin-top: -75px;
+    margin-top: -70px;
     z-index: 1;
     color: var(--color_fuente_claro);
-    font-size: var(--font-size-32);
+    font-size: var(--font-size-24);
 }
 .btn_cerrar_sesion{
     width: 370px;
@@ -870,6 +891,139 @@ img{
     font-size: var(--font-size-18);
     margin-top: var(--marg-8);
 }
+
+/*--------------------------------------CONTACTO-----------------------------------------------------------*/
+
+.contact-wrapper {
+    margin: var(--marg-32);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.icono_solial{
+    position: absolute;
+} 
+.icono_social_ic{
+    position: relative;
+    margin: var(--marg-16);
+    margin-top: 25%;
+   
+}
+.container_iconos_social{
+    margin-top: var(--marg-8);
+    width: 100%;
+    text-align: center;
+}
+.btn_icono_social{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px -5px #ff755985;
+    overflow: hidden;
+    position: relative;
+}
+.btn_icono_social i {
+    line-height: 2.2;
+    transition: 0.2s linear;
+}
+.btn_icono_social:hover i{
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.btn_icono_social::before{
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #ff7559;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.btn_icono_social:hover::before {
+    animation: pounce 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+  
+@keyframes pounce {
+    0%{
+        left: -110%;
+        top: 90%;
+    }50%{
+        left: 10%;
+        top: -30%;
+    }100%{
+        top: -10%;
+        left: -10%;
+    }
+}
+.ubicacion{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.icono_ubicacion{
+    margin-top: var(--marg-16);
+}
+.titulo_contacto_social,.titulo_contacto_ubi{
+    margin-top: var(--marg-24);
+    text-align: center; 
+}
+.mapa{
+    margin-left: var(--marg-32);
+}
+.como_llegar{
+    margin-top: var(--marg-8);
+    margin-bottom: var(--marg-8);
+    text-align: center;
+}
+.titulo_quienes_somos{
+    margin: var(--marg-32);
+    margin-bottom: var(--marg-64);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
 @media (min-width: 599px) and (max-width: 1023px) {
     .header {
