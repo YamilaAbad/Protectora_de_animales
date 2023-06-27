@@ -80,10 +80,32 @@
                 <h2 class="titulo_banner">Adopciones</h2>
             </div> 
             <section class="section">
-            	<!--<div class="opciones">
-            		<button>Filtro</button>
-            		<button>Limpiar</button>
-            	</div>-->
+            	<div class="buscador">
+					<label class="buscador_nombre">
+						<iconify-icon icon="ph:magnifying-glass-bold" style="color: #ff7559;" width="20" height="20" class="icono_buscador"></iconify-icon>
+						<input type="text" class="input_buscador">
+					</label>
+					<div class="opciones_buscador">
+						<button class="limpiar">Limpiar busqueda</button>
+						<select class="select_filtro">
+							<option disabled selected>Filtrar por</option>
+							<optgroup label="Sexo">
+								<option value="macho">Macho</option>
+								<option value="hembra">Hembra</option>
+							</optgroup>
+							<optgroup label="Tamaño">
+								<option value="pequeño">Pequeño</option>
+								<option value="mediano">Mediano</option>
+								<option value="grande">Grande</option>
+							</optgroup>
+							<optgroup label="Edad">
+								<option value="cachorro">Cachorro</option>
+								<option value="adulto">Adulto</option>
+								<option value="tercera_edad">Tercera edad</option>
+							</optgroup>
+						</select>
+					</div>
+				</div>
                 <div class="container_adopciones">
                 	<div class="groups_cards_adopcion">
 	                    <div class="card_adopcion">

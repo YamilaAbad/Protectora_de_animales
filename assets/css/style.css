@@ -348,7 +348,50 @@ img{
     color: var(--color_fuente_claro);
     z-index: 2;
 }
+/*----------------------------FILTRO----------------------------------------*/
+.buscador{
+    margin-top: var(--marg-64);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+}
 
+.input_buscador{
+    margin-left: -40px;    
+    height: 40px;
+    width: 85%;
+    border-radius: 3px;
+    border-color: var(--color_principal);
+    position: absolute;
+}
+.icono_buscador{
+    position: relative;
+    margin: 10px;
+    z-index: 1;
+}
+.opciones_buscador{
+    display: flex;
+    flex-direction: row;
+    
+}
+.limpiar, .select_filtro{
+    border-radius: 3px;
+    width: 50%;
+    height: 40px;
+}
+.limpiar{
+    background-color: var(--color_boton_cancelar);
+    color: var(--color_fuente_claro);
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+.select_filtro{
+    background-color: var(--color_nav);
+    color: var(--color_fuente_claro);
+}
 /*---------------------------------- CARDS ADOPCION --------------------------*/
 .container_adopciones{
     display: flex;
@@ -424,45 +467,6 @@ img{
     border-radius: 3px;
     text-align: center;    
 }
-/*.cards_adopcion,.opciones_usuario{
-    margin-top: var(--marg-24); 
-    display: flex;
-    margin-bottom: var(--marg-72);
-}
-.card_adopcion{ 
-    margin-bottom: var(--marg-24); 
-    width: 50%;
-}
-.overlay, .overlay_user{
-    position: absolute;
-    content: '';
-    background-color: var(--overlayCard);
-}
-.img_perro_adop, .overlay{
-    box-sizing: border-box;
-    margin: var(--marg-32);
-    width: 140px;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 3px;
-    text-align: center;
-    
-}
-.img_perro_adop{
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3);
-}
-.btn_info_perro{
-    width: 130px;
-    height: 170px;
-}
-.nombre_perro{
-    position: relative;
-    text-align: center;
-    margin-top: -80px;
-    z-index: 1;
-    color: var(--color_fuente_claro);
-    font-size: var(--font-size-24);
-}*/
 
 /*------------------------------------ Descripción individual del perro mobile --------------------------*/
 .cartel_perro{
@@ -489,7 +493,7 @@ img{
     margin: var(--marg-24);
 }
 .descripcion_perro{
-    text-align: center;
+    text-align: left;
     font-size: var(--font-size-18);
 }
 .pie_descripcion{
@@ -643,9 +647,10 @@ img{
     margin-top: var(--marg-24);
 }
 .btn_estilo{
+    margin-top: var(--marg-48);
     color: var(--color_fuente_claro);
-    background: var(--color_boton_inactivo);
-    font-size: var(--font-size-18);
+    font-size: var(--font-size-32);
+    font-weight: 600;
 }
 .info{
     margin-top: var(--marg-24);
@@ -654,7 +659,21 @@ img{
 .enlace_form{
     color: var( --color_links);
 }
-
+#pago_dni,#mercado_pago,#otras_tarjetas{
+    background-size: cover;
+    background-position: center;
+    border: none; 
+    padding: 10px 20px;
+}
+#pago_dni{
+    background-image: url('../img/donaciones_botones/botón_dni_bna.png');
+}
+#mercado_pago{
+    background-image: url('../img/donaciones_botones/mercado_de_pago.png');
+}
+#otras_tarjetas{
+    background-image: url('../img/donaciones_botones/otras_tarjetas.png');
+}
 /*------------------------ FORMULARIO DE DONACIONES ----------------------------------*/
 .container_form,
 .cardFormulario{
@@ -691,7 +710,7 @@ img{
     margin-bottom: var(--marg-16);
 }
 .info_descripcion{
-    text-align: justify;
+    text-align: left;
     font-size: var(--font-size-18);
     margin: var(--marg-8) var(--marg-16) 0;
 }
@@ -804,10 +823,14 @@ img{
 }
 
 /*------------------------------------TABLA DONACIONES------------------------------*/
+.titulo_donaciones{
+    margin-top: var(--marg-32);
+    text-align: center;
+    font-size: var(--font-size-32);
+}
 .tabla_donaciones{
     display: flex;
     margin-top: var(--marg-32);
-    
     border: 2px solid var(--color_principal);
     background: white;
     border-collapse: collapse;
@@ -840,11 +863,11 @@ img{
 .btn_volver{
     position: absolute;
     width: 150px;
-    height: 50px;
+    height: 60px;
     margin-left: 25%;
     border-radius: 3px;
     color: var(--color_fuente_claro);
-    padding: var(--marg-8)  var(--marg-16) ;
+    padding:var(--marg-16) ;
     font-size: var(--font-size-18);
     text-align: center;
     background-color: var(--color_boton_aceptar);
