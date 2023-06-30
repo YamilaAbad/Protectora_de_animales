@@ -207,19 +207,6 @@ main{
 }
 /*--------------------- HOME -----------------------------*/
 
-.swiper-container {
- width: 100%; 
- margin-top: 0;
- border:1px solid red;
-
-}
-.swiper-slide img{
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-}
-
-
 .container_home_card{
     width: 100%; 
     display: flex;
@@ -1023,38 +1010,6 @@ img{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------ MEDIA QUERIES Medium devise and Large devise------------*/
 @media (min-width: 599px) and (max-width: 1023px) {
     .header {
@@ -1090,6 +1045,20 @@ img{
 
 /*------------ MEDIA QUERIES:Extra large devise ------------*/
 @media screen and (min-width: 1024px) {
+    .group_card_home{
+    width: 100%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .card_home{
+        margin-right: 3rem;
+
+    }
+    .bannerHome__testimonio img{
+        height: 200px;
+    }
     .section {
         flex-direction: column;
         margin: 0 var(--marg-64);
