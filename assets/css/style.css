@@ -379,9 +379,7 @@ img{
     border-color: var(--color_principal);
     
 }
-.icono_buscador{
-   
-}
+
 .opciones_buscador{
     display: flex;
     flex-direction: row;
@@ -1162,5 +1160,9 @@ img{
         font-weight: 500;
     }
 
+    .group_card_testimonio{
+        display: flex;
+        flex-direction: row;
+    }
 }
     
