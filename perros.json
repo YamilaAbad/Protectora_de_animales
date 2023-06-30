@@ -1,0 +1,177 @@
+[
+	{
+		"name": "Alejo",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/alejo.jpeg",
+		"enlace": "info_perro.html"
+	},
+	{
+		"name": "Antonella",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/antonella.jpeg"
+	},
+	{
+		"name": "Antonio",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"tercera edad",
+		"imagen": "./assets/img/adopcion/antonio.jpeg"
+	},
+	{
+		
+		"name": "Aquiles",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/aquiles.jpeg"
+	},
+	{
+		"name": "Bruma",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/bruma.jpeg"
+	},
+	{
+		"name": "Chueca",
+		"sexo":"hembra",
+		"tamaño":"pequeño",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/chueca.jpeg"
+	},
+	{
+		"name": "Colmillos",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/colmillos.jpeg"
+	},
+	{
+		"name": "Coqueta",
+		"sexo":"hembra",
+		"tamaño":"pequeño",
+		"edad":"tercera edad",
+		"imagen": "./assets/img/adopcion/coqueta.jpeg"
+	},
+	{
+		"name": "Donald",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"tercera edad",
+		"imagen": "./assets/img/adopcion/donald.jpeg"
+	},
+	{
+
+		"name": "Dor y Char",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/dorito y charlie.jpeg"
+	},
+	{
+
+		"name": "Dulce",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen":"./assets/img/adopcion/dulce.jpeg"
+	},
+	{
+
+		"name": "Fugitiva",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/fugitiva.jpeg"
+	},
+	{
+
+		"name": "Hongo",
+		"sexo":"macho",
+		"tamaño":"pequeño",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/hongos.jpeg"
+	},
+	{
+
+		"name": "Lluvia",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"tercera edad",
+		"imagen": "./assets/img/adopcion/lluvia.jpeg"
+	},
+	{
+
+		"name": "Lolo",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/lolo.jpeg"
+	},
+	{
+
+		"name": "Miel",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/miel.jpeg"
+	},
+	{
+
+		"name": "Orejita",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/orejita.jpeg"
+	},
+	{
+		"name": "porrudo",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/porrudo.jpeg"
+	},
+	{
+		"name": "satanas",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/satanas.jpeg"
+	},
+	{
+		"name": "Tifon",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/tifon.jpeg"
+	},
+	{
+
+		"name": "Tefi",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/tefi.jpeg"
+	},
+	{
+
+		"name": "Tivila",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"tercera edad",
+		"imagen": "./assets/img/adopcion/tivila.jpeg"
+	},
+	{
+
+		"name": "Zola",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/zola.jpeg"
+	}
+
+]

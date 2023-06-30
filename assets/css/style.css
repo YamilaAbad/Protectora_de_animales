@@ -350,7 +350,7 @@ img{
 }
 /*----------------------------FILTRO----------------------------------------*/
 .buscador{
-    margin-top: var(--marg-64);
+    margin-top: var(--marg-32);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -358,23 +358,19 @@ img{
     height: 80px;
 }
 
-.input_buscador{
-    margin-left: -40px;    
+.input_buscador{  
     height: 40px;
     width: 85%;
     border-radius: 3px;
     border-color: var(--color_principal);
-    position: absolute;
+    
 }
 .icono_buscador{
-    position: relative;
-    margin: 10px;
-    z-index: 1;
+   
 }
 .opciones_buscador{
     display: flex;
     flex-direction: row;
-    
 }
 .limpiar, .select_filtro{
     border-radius: 3px;
@@ -398,7 +394,7 @@ img{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    margin: var(--marg-64) auto;
+    margin: var(--marg-32) auto;
 }
 .groups_cards_adopcion{
     display: grid;
