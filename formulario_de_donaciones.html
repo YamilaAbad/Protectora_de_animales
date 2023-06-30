@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/animacion_btn.css">
     <title>Protectora de animales</title>
 </head>
 
@@ -84,7 +85,7 @@
                                 <h2 class="titulo_sesion">Formulario de Donaciones</h2>
                                 <p class="info_descripcion">Si deseas donar medicamentos, alimentos ó materiales, para ayudarnos y no tienes los medios para alcanzarlos al refugio ó no tienes tiempo, nosotros podemos ir a buscarlos. <br>
                                 Para esto necesitamos que llenes, el siguiente formulario.</p>
-                                <div class="form">
+                                <form class="form">
                                     <div class="inputs_donac">
                                         <label for="nombre" class="label_formulario">Nombre: </label>
                                         <input placeholder="Ingrese su nombre" id="nombre" class="input_sesion">
@@ -105,16 +106,23 @@
                                         <label for="nombre" class="label_formulario">Descripción: </label>
                                         <textarea placeholder="Escriba una breve descripción" name="" id="descripcion" cols="30" class="input_area" rows="10"></textarea>
                                     </div>
-                                    <div class="content_form">
-                                        <button type="submit" class="btn_enviar">Enviar</button>
-                                    </div>
-                                </div>
+                                    <button class="button">
+                                    <span class="default">Enviar</span>
+                                    <span class="success">Enviado exitosamente<iconify-icon icon="material-symbols:check" style="color: #24c115;"></iconify-icon></span>
+                                    <div class="left"></div>
+                                    <div class="right"></div>
+                                </button>
+                                    
+                                </form>
+                                
                             </div>
                         </div>
                 </section>
             </div>
         </main>
     </div>
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js'></script>
+    <script src="./assets/js/btn_enviar_animacion.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
 </body>

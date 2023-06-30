@@ -1,0 +1,162 @@
+[
+	{
+		"name": "Alejo",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/alejo.jpeg",
+		"enlace": "info_perro.html"
+	},
+	{
+		"name": "Antonella",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/antonella.jpeg"
+	},
+	{
+		"name": "Antonio",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"tercera edad",
+		"imagen": "./assets/img/adopcion/antonio.jpeg"
+	},
+	{
+		
+		"name": "Aquiles",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/aquiles.jpeg"
+	},
+	{
+		"name": "Bruma",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/bruma.jpeg"
+	},
+	{
+		"name": "Chueca",
+		"sexo":"hembra",
+		"tamaño":"pequeño",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/chueca.jpeg"
+	},
+	{
+		"name": "Colmillos",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto",
+		"imagen": "./assets/img/adopcion/colmillos.jpeg"
+	},
+	{
+		"name": "Coqueta",
+		"sexo":"hembra",
+		"tamaño":"pequeño",
+		"edad":"tercera edad",
+		"imagen": "./assets/img/adopcion/coqueta.jpeg"
+	},
+	{
+		"name": "Donald",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"tercera edad"
+	},
+	{
+
+		"name": "Dor y Char",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Dulce",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Fugitiva",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Hongo",
+		"sexo":"macho",
+		"tamaño":"pequeño",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Lluvia",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"tercera edad"
+	},
+	{
+
+		"name": "Lolo",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Miel",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Orejita",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"adulto"
+	},
+	{
+		"name": "porrudo",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto"
+	},
+	{
+		"name": "satanas",
+		"sexo":"macho",
+		"tamaño":"grande",
+		"edad":"adulto"
+	},
+	{
+		"name": "Tifon",
+		"sexo":"macho",
+		"tamaño":"mediano",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Tefi",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto"
+	},
+	{
+
+		"name": "Tivia",
+		"sexo":"hembra",
+		"tamaño":"grande",
+		"edad":"tercera edad"
+	},
+	{
+
+		"name": "Zola",
+		"sexo":"hembra",
+		"tamaño":"mediano",
+		"edad":"adulto"
+	}
+
+]

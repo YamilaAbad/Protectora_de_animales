@@ -83,7 +83,7 @@
             	<div class="buscador">
 					<label class="buscador_nombre">
 						<iconify-icon icon="ph:magnifying-glass-bold" style="color: #ff7559;" width="20" height="20" class="icono_buscador"></iconify-icon>
-						<input type="text" class="input_buscador">
+						<input type="text" class="input_buscador" id="buscador-perros">
 					</label>
 					<div class="opciones_buscador">
 						<button class="limpiar">Limpiar busqueda</button>
@@ -107,129 +107,15 @@
 					</div>
 				</div>
                 <div class="container_adopciones">
-                	<div class="groups_cards_adopcion">
-	                    <div class="card_adopcion">
-	                        <a href="info_perro.html" class="btn_info_perro">
-	                            <!--<div class="overlay"></div>-->
-	                            <img src="./assets/img/adopcion/alejo.jpeg" alt="alejo_adopcion" class="img_perro_adop"></img>
-	                            <h4 class="nombre_perro">Alejo</h4>
-	                        </a>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <!--<div class="overlay"></div>-->
-	                        <img src="./assets/img/adopcion/antonella.jpeg" alt="antonella_adopcion" class="img_perro_adop"></img> 
-	                        <h4 class="nombre_perro">Antonella</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <!--<div class="overlay"></div>-->
-	                        <img src="./assets/img/adopcion/antonio.jpeg" alt="antonio_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Antonio</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <!--<div class="overlay"></div>-->
-	                        <img src="./assets/img/adopcion/aquiles.jpeg" alt="aquiles_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Aquiles</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/bruma.jpeg" alt="bruma_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Bruma</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/chueca.jpeg" alt="chueca_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Chueca</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/colmillos.jpeg" alt="colmillos_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Colmillos</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/coqueta.jpeg" alt="coqueta_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Coqueta</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/donald.jpeg" alt="donald_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Donald</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/dorito y charlie.jpeg" alt="dorito_y_charlie_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Dor y Char</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/dulce.jpeg" alt="dulce_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Dulce</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/fugitiva.jpeg" alt="fugitiva_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Fugitiva</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/hongos.jpeg" alt="hongos_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Hongos</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/lluvia.jpeg" alt="lluvia_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Lluvia</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/lolo.jpeg" alt="lolo_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Lolo</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/miel.jpeg" alt="miel_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Miel</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/orejita.jpeg" alt="orejita_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Orejita</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/porrudo.jpeg" alt="porrudo_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Porrudo</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/satanas.jpeg" alt="satanas_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Satanas</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/tefi.jpeg" alt="tefi_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Tefi</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/tifon.jpeg" alt="tifon_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Tifon</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/tivila.jpeg" alt="tivila_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Tivila</h4>
-	                    </div>
-	                    <div class="card_adopcion">
-	                        <div class="overlay"></div>
-	                        <img src="./assets/img/adopcion/zola.jpeg" alt="zola_adopcion" class="img_perro_adop"></img>
-	                        <h4 class="nombre_perro">Zola</h4>
-	                    </div>
-                	</div>
+					<div class="groups_cards_adopcion" id="groups_cards_adopcion"></div>
+                	
                 </div>
             </section>   
         </main>
     </div>
+
+	
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
 </html>
