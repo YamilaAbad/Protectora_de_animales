@@ -6,7 +6,7 @@ buscador_perros.addEventListener('keyup', () => {
     // Convertir el texto dentro del input a minúsculas.
     const filtro = buscador_perros.value.toLowerCase();
     // Obtener un array de las perros en el contenedor.
-    const perros_sin_filtro = Array.from(listado_perros.dog);
+    const perros_sin_filtro = Array.from(listado_perros.children);
 
     // Por cada perro en el filtro.
     perros_sin_filtro.forEach(perro => {
